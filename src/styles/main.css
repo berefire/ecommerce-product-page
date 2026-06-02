@@ -1,0 +1,4 @@
+@layer components, utilities;
+
+@import "@components/index.css" layer(components);
+@import "@utilities/index.css" layer(utilities);
