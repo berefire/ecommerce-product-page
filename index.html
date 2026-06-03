@@ -1,49 +1,131 @@
 <!DOCTYPE html>
 <html lang="en" translate="no">
+
 <head>
   <meta charset="UTF-8">
   <meta name="google" content="notranslate"> <!-- prevents google translate from translating the page -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <meta name="author" content="Berefire">
-  <meta name="description" content="Accessible e-commerce product page with interactive galleries, cart functionality, responsive design, and keyboard-friendly navigation.">
-  <meta name="keywords" content="e-commerce, product page, accessibility, interactive galleries, cart functionality, responsive design, keyboard navigation">
-  
+  <meta name="description"
+    content="Accessible e-commerce product page with interactive galleries, cart functionality, responsive design, and keyboard-friendly navigation.">
+  <meta name="keywords"
+    content="e-commerce, product page, accessibility, interactive galleries, cart functionality, responsive design, keyboard navigation">
+
   <meta property="og:title" content="Berefire | Frontend Mentor E-commerce Product Page">
-  <meta property="og:description" content="Accessible e-commerce product page with interactive galleries, cart functionality, responsive design, and keyboard-friendly navigation.">
+  <meta property="og:description"
+    content="Accessible e-commerce product page with interactive galleries, cart functionality, responsive design, and keyboard-friendly navigation.">
   <meta property="og:image" content="./images/og-image.png">
   <meta property="og:url" content="https://berefire.github.io/ecommerce-product-page/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Berefire | Frontend Mentor E-commerce Product Page">
 
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  
+
   <title>Berefire | Frontend Mentor E-commerce Product Page</title>
 
   <script type="module" defer src="./src/js/main.js"></script>
 </head>
+
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <header>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-  Sneaker Company
+    <button type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+      <span aria-hidden="true">☰</span>
+    </button>
 
-  Fall Limited Edition Sneakers
+    <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title">
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+      <div class="mobile-menu-content">
+        <h2 id="mobile-menu-title" class="sr-only">Mobile Menu</h2>
+        <button type="button" aria-label="Close navigation menu" id="close-nav">
+          <span aria-hidden="true">×</span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </dialog>
+  </header>
+  <main>
+    <article>
+      <p>Sneaker Company</p>
 
-  $125.00
-  50%
-  $250.00
+      <h1>Fall Limited Edition Sneakers</h1>
 
-  0
-  Add to cart
-  
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+
+      <section class="product-pricing" aria-label="pricing-title">
+        <h2 class="sr-only">Product pricing</h2>
+
+
+        <div>
+          <p class="current-price">$125.00</p>
+          <p class="discount">50%</p>
+        </div>
+
+        <p>$250.00</p>
+
+        <p>0</p>
+      </section>
+
+      <!-- Quantity controls -->
+      <section class="quantity-section" aria-labelledby="quantity-title">
+
+        <h2 id="quantity-title" class="sr-only">
+          Product quantity
+        </h2>
+
+        <div class="quantity-controls" role="group" aria-label="Quantity selector">
+
+          <button type="button" aria-label="Decrease quantity">
+
+            <span aria-hidden="true">−</span>
+
+          </button>
+
+          <p aria-live="polite">
+            Quantity:
+            <span>0</span>
+          </p>
+
+          <button type="button" aria-label="Increase quantity">
+
+            <span aria-hidden="true">+</span>
+
+          </button>
+
+        </div>
+
+      </section>
+
+      <!-- Add to cart -->
+      <button type="button" class="add-to-cart-button" aria-label="Add Fall Limited Edition Sneakers to cart">
+
+        Add to cart
+
+      </button>
+    </article>
+  </main>
   <footer class="attribution">
     Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
       rel="noopener noreferrer" aria-label="Frontend Mentor (opens in a new tab)">Frontend Mentor <span
@@ -52,4 +134,5 @@
       href="#">Berefire</a>.
   </footer>
 </body>
+
 </html>
