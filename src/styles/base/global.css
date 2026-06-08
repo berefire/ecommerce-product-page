@@ -1,5 +1,6 @@
 @layer base {
   html {
+    background-color: var(--bg-color-primary);
     font-family: var(--primary-ff);
     -webkit-text-size-adjust: 100%;
   }
@@ -11,27 +12,33 @@
     flex-direction: column;
   }
 
+  svg {
+    display: block;
+  }
+
   dialog {
     margin: 0;
     padding: 0;
     border: none;
-
     inline-size: 100%;
     block-size: 100vh;
-
     max-inline-size: none;
     max-block-size: none;
-
     background: transparent;
-
     overflow: hidden;
   }
 
   button {
     cursor: pointer;
     border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    border: 0;
     background: transparent;
-    margin-inline-start: auto;
   }
 
   @supports (min-block-size: 100dvh) {

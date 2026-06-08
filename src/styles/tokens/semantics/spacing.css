@@ -1,0 +1,13 @@
+@layer tokens.semantics {
+    :root {
+        --gap-cluster-xs: var(--spacing-200);
+        --gap-cluster-sm: var(--spacing-300);
+
+        --padding-block-start-box-xs: 1.188rem;  /* 19px */
+        --padding-block-end-box-xs: var(--spacing-300);
+        --padding-inline-box-xs: var(--spacing-300);
+
+        --inset-inline-start-previous-button: var(--spacing-200);
+        --inset-inline-end-next-button: var(--spacing-200);
+    }
+}

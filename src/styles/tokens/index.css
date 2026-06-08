@@ -1,1 +1,2 @@
-@import "@tokens/primitives/index.css";
+@import "@primitives/index.css";
+@import "@semantics/index.css"

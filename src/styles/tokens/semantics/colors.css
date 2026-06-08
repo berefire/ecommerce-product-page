@@ -1,0 +1,12 @@
+@layer tokens.semantics {
+    :root {
+        --bg-color-primary: var(--white);
+
+        --bg-icon-menu: var(--grey-500);
+        --bg-icon-cart: var(--grey-500);
+        --bg-icon-logo: var(--grey-950);
+
+        --bg-gallery-button: var(--grey-950);
+        --bg-gallery-button-hover: var(--orange-500);
+    }
+}

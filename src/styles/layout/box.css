@@ -1,0 +1,13 @@
+@layer layout {
+    .box {
+        padding-block-start: var(--padding-block-start-box, 0);
+        padding-block-end: var(--padding-block-end-box, 0);
+        padding-inline: var(--padding-inline-box, 0);
+    }
+
+    .box--xs {
+        --padding-block-start-box: var(--padding-block-start-box-xs);
+        --padding-block-end-box: var(--padding-block-end-box-xs);
+        --padding-inline-box: var(--padding-inline-box-xs);
+    }
+}

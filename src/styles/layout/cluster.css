@@ -1,0 +1,16 @@
+@layer layout {
+    .cluster {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--cluster-space, 1rem);
+    }
+
+    .cluster--xs {
+        --cluster-space: var(--gap-cluster-xs);
+    }
+
+    .cluster--sm {
+        --cluster-space: var(--gap-cluster-sm);
+    }
+}
