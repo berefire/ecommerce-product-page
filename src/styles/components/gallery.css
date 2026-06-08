@@ -1,0 +1,17 @@
+@layer components {
+  .gallery-wrapper {
+    position: relative;
+  }
+
+  .product-image {
+    display: block;
+    inline-size: 100%;
+    block-size: auto;
+  }
+
+  .product-image-trigger {
+    cursor: default;
+  }
+
+  
+}

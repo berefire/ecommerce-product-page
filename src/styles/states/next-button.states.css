@@ -1,0 +1,5 @@
+@layer states {
+    .gallery-button:hover {
+        color: var(--bg-gallery-button-hover);
+    }
+}

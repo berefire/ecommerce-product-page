@@ -1,0 +1,24 @@
+@layer components {
+    .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .avatar{
+        inline-size: 1.5rem;
+        block-size: 1.5rem;
+    }
+
+    .icon-menu {
+        color: var(--bg-icon-menu);
+    }
+
+    .icon-cart {
+        color: var(--bg-icon-cart);
+    }
+
+    .icon-logo {
+        color: var(--bg-icon-logo);
+    }
+}
