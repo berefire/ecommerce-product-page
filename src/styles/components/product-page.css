@@ -1,0 +1,46 @@
+@layer components {
+  .product-company {
+    text-transform: uppercase;
+    color: var(--fc-product-company);
+  }
+
+  .item-title {
+    color: var(--fc-item-title);
+  }
+
+  .product-description {
+    color: var(--fc-product-description);
+  }
+
+  .product-pricing {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-price-group);
+    inline-size: fit-content;
+  }
+
+  .current-price {
+    color: var(--fc-current-price);
+  }
+
+  .discount {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--fc-discount);
+    background-color: var(--bg-discount);
+    border-radius: 0.375rem;
+    padding-inline: 0.5em;
+  }
+
+  .original-price {
+    color: var(--fc-original-price);
+  }
+}

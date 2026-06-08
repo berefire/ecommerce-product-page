@@ -1,0 +1,15 @@
+@layer layout {
+    .stack  {
+        display: flex;
+        flex-direction: column;
+        gap: var(--stack-space, 1rem);
+    }
+
+    .stack--xs {
+        --stack-space: var(--stack-xs);
+    }
+
+    .stack--sm {
+        --stack-space: var(--stack-sm);
+    }
+}

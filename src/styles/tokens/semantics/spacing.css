@@ -7,7 +7,18 @@
         --padding-block-end-box-xs: var(--spacing-300);
         --padding-inline-box-xs: var(--spacing-300);
 
+        --padding-block-start-box-sm: var(--spacing-300);
+        --padding-block-end-box-sm: 4.375rem;  /* 70px */
+        --padding-inline-box-sm: var(--spacing-300);
+        
         --inset-inline-start-previous-button: var(--spacing-200);
         --inset-inline-end-next-button: var(--spacing-200);
+
+        --gap-buttons-group: var(--spacing-200);
+
+        --stack-xs: var(--spacing-200);
+        --stack-sm: var(--spacing-400);
+
+        --gap-price-group: var(--spacing-200);
     }
 }

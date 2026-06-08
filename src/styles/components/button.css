@@ -1,0 +1,7 @@
+@layer components {
+    .buttons-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-buttons-group);
+    }
+}

@@ -10,4 +10,10 @@
         --padding-block-end-box: var(--padding-block-end-box-xs);
         --padding-inline-box: var(--padding-inline-box-xs);
     }
+
+    .box--sm {
+        --padding-block-start-box: var(--padding-block-start-box-sm);
+        --padding-block-end-box: var(--padding-block-end-box-sm);
+        --padding-inline-box: var(--padding-inline-box-sm);
+    }
 }

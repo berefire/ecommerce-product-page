@@ -8,5 +8,14 @@
 
         --bg-gallery-button: var(--grey-950);
         --bg-gallery-button-hover: var(--orange-500);
+
+        --fc-product-company: var(--grey-500);
+        --fc-item-title: var(--grey-950);
+        --fc-product-description: var(--grey-500);
+        --fc-current-price: var(--grey-950);
+
+        --bg-discount: var(--grey-950);
+        --fc-discount: var(--white);
+        --fc-original-price: var(--grey-500);
     }
 }
