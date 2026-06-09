@@ -20,5 +20,13 @@
         --stack-sm: var(--spacing-400);
 
         --gap-price-group: var(--spacing-200);
+
+        --padding-inline-quantity-selector: var(--spacing-200);
+        --padding-block-quantity-selector: var(--spacing-200);
+
+        --gap-add-to-cart-button: var(--spacing-200);
+
+        --padding-block-add-to-cart-button: var(--spacing-200);
+        --padding-inline-add-to-cart-button: var(--spacing-1300);
     }
 }

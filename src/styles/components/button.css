@@ -4,4 +4,24 @@
         flex-direction: column;
         gap: var(--gap-buttons-group);
     }
+
+    .add-to-cart-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--gap-add-to-cart-button);
+
+        color: var(--bg-add-to-cart-button);
+        background-color: var(--bg-add-to-cart-button);
+        border-radius: 0.625rem;
+        padding-block: var(--padding-block-add-to-cart-button);
+    }
+
+    .description-button {
+        display: inline-block;
+    }
+
+    .cart-icon, .description-button {
+        color: var(--bg-cart-icon);
+    }
 }

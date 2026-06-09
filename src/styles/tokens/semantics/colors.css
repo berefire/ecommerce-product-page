@@ -17,5 +17,13 @@
         --bg-discount: var(--grey-950);
         --fc-discount: var(--white);
         --fc-original-price: var(--grey-500);
+
+        --bg-quantity-selector: var(--grey-50);
+        --bg-quantity-button: var(--orange-500);
+        --bg-quantity-button-hover: var(--orange-300);
+
+        --bg-cart-icon: var(--grey-950);
+        --bg-add-to-cart-button: var(--orange-500);
+        --bg-add-to-cart-button-hover: var(--orange-300);
     }
 }

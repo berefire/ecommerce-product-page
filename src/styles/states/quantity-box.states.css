@@ -1,0 +1,5 @@
+@layer states {
+    .quantity-button:hover {
+        color: var(--bg-quantity-button-hover);
+    }
+}

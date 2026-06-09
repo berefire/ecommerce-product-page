@@ -1,0 +1,5 @@
+@layer states {
+    .add-to-cart-button:hover {
+        background-color:  var(--bg-add-to-cart-button-hover);
+    }
+}

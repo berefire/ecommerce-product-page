@@ -1,0 +1,24 @@
+@layer components {
+    .quantity-selector {
+        display: flex;
+        align-items: center;
+        inline-size: 100%;
+        border-radius: 0.625rem;
+        padding-inline: var(--padding-inline-quantity-selector);
+        padding-block: var(--padding-block-quantity-selector);
+        background-color: var(--bg-quantity-selector);
+    }
+
+    .quantity-input {
+        inline-size: 100%;
+        text-align: center;
+    }
+
+    .quantity-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: var(--bg-quantity-button);
+    }
+}
