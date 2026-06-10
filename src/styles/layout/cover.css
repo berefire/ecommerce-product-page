@@ -1,6 +1,6 @@
 @layer layout {
     .cover {
-        flex:1;
+        flex: 1;
         display: grid;
         margin-inline:auto;
     }

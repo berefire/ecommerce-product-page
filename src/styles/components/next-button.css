@@ -1,5 +1,5 @@
 @layer components {
- .gallery-button {
+  .gallery-button {
     position: absolute;
     inset-block-start: 50%;
 
@@ -16,13 +16,25 @@
     border-radius: 50%;
     background-color: var(--white);
     color: var(--bg-gallery-button);
- }
- 
- .gallery-button--previous {
-    inset-inline-start: var(--inset-inline-start-previous-button);
- }
+  }
 
- .gallery-button--next {
+  .gallery-button--previous {
+    inset-inline-start: var(--inset-inline-start-previous-button);
+  }
+
+  .gallery-button--next {
     inset-inline-end: var(--inset-inline-end-next-button);
- }
+  }
+
+  @media (min-width: 48em) {
+    .gallery-button {
+      translate: 0 10;
+    }
+  }
+
+  @media (min-width: 64em) {
+    .gallery-button {
+      display: none;
+    }
+  }
 }

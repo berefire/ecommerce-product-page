@@ -8,6 +8,7 @@
 
         --bg-gallery-button: var(--grey-950);
         --bg-gallery-button-hover: var(--orange-500);
+        --bg-gallery-border: var(--grey-100);
 
         --fc-product-company: var(--grey-500);
         --fc-item-title: var(--grey-950);
@@ -25,5 +26,14 @@
         --bg-cart-icon: var(--grey-950);
         --bg-add-to-cart-button: var(--orange-500);
         --bg-add-to-cart-button-hover: var(--orange-300);
+
+        --bg-border:var(--grey-100);
+
+        --fc-desktop-nav-list: var(--grey-500);
+
+        --bg-desktop-nav-list-hover: var(--orange-500);
+        --bg-avatar-hover: var(--orange-500);
+
+        --bg-thumbnail-button-pressed: var(--orange-500);
     }
 }

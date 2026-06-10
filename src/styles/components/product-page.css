@@ -19,7 +19,6 @@
 
   .price-group {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: var(--gap-price-group);
     inline-size: fit-content;
@@ -42,5 +41,19 @@
 
   .original-price {
     color: var(--fc-original-price);
+  }
+
+  @media (min-width: 48em) {
+    .product-pricing {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--gap-product-pricing);
+    }
+  }
+
+  @media (min-width: 64em) {
+    .product-description {
+      padding-block-start: 1rem;
+    }
   }
 }

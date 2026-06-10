@@ -1,32 +1,87 @@
 @layer tokens.semantics {
+  :root {
+    --gap-cluster-xs: var(--spacing-200);
+    --gap-cluster-sm: var(--spacing-300);
+
+    --gap-grid-lg: var(--spacing-300);
+
+    --margin-block-start-box-xs: 1.188rem; /* 19px */
+    --padding-block-end-box-xs: var(--spacing-300);
+    --margin-inline-box-xs: var(--spacing-300);
+
+    --padding-block-end-box-sm: 4.375rem; /* 70px */
+    --padding-inline-box-sm: var(--spacing-300);
+    --padding-block-start-box-sm: 0;
+
+    --inset-inline-start-previous-button: var(--spacing-200);
+    --inset-inline-end-next-button: var(--spacing-200);
+
+    --gap-buttons-group: var(--spacing-200);
+
+    --stack-xs: var(--spacing-200);
+    --stack-sm: var(--spacing-400);
+
+    --gap-price-group: var(--spacing-200);
+
+    --padding-inline-quantity-selector: var(--spacing-200);
+    --padding-block-quantity-selector: var(--spacing-200);
+
+    --gap-add-to-cart-button: var(--spacing-200);
+
+    --padding-block-add-to-cart-button: var(--spacing-200);
+    --padding-inline-add-to-cart-button: var(--spacing-1300);
+  }
+
+  @media (min-width: 48em) {
     :root {
-        --gap-cluster-xs: var(--spacing-200);
-        --gap-cluster-sm: var(--spacing-300);
+      --margin-block-start-box-xs: 1.75rem; /* 28px */
+      --padding-block-end-box-xs: var(--spacing-400);
+      --margin-inline-box-xs: var(--spacing-1000);
 
-        --padding-block-start-box-xs: 1.188rem;  /* 19px */
-        --padding-block-end-box-xs: var(--spacing-300);
-        --padding-inline-box-xs: var(--spacing-300);
+      --margin-inline-box-lg: var(--spacing-1000);
+      --padding-block-start-box-lg: var(--spacing-600);
+      --margin-block-end-box-lg: 4.375rem; /* 70px */
 
-        --padding-block-start-box-sm: var(--spacing-300);
-        --padding-block-end-box-sm: 4.375rem;  /* 70px */
-        --padding-inline-box-sm: var(--spacing-300);
-        
-        --inset-inline-start-previous-button: var(--spacing-200);
-        --inset-inline-end-next-button: var(--spacing-200);
+      --gap-grid-lg: var(--spacing-600);
 
-        --gap-buttons-group: var(--spacing-200);
+      --padding-block-start-gallery-wrapper: var(--spacing-600);
 
-        --stack-xs: var(--spacing-200);
-        --stack-sm: var(--spacing-400);
+      --padding-block-end-box-sm: 0;
+      --padding-inline-box-sm: 0;
 
-        --gap-price-group: var(--spacing-200);
+      --gap-price-group: var(--spacing-300);
+      --gap-product-pricing: var(--spacing-100);
 
-        --padding-inline-quantity-selector: var(--spacing-200);
-        --padding-block-quantity-selector: var(--spacing-200);
+      --gap-buttons-group: var(--spacing-100);
 
-        --gap-add-to-cart-button: var(--spacing-200);
-
-        --padding-block-add-to-cart-button: var(--spacing-200);
-        --padding-inline-add-to-cart-button: var(--spacing-1300);
+      --stack-xs: var(--spacing-300);
+      --stack-sm: var(--spacing-300);
     }
+  }
+
+  @media (min-width: 64em) {
+    :root {
+      --margin-block-start-box-xs: 1.75rem; /* 28px */
+      --padding-block-end-box-xs: var(--spacing-400);
+      --margin-inline-box-xs: 10.3125rem; /* 165px */
+
+      --gap-cluster-xs: var(--spacing-700);
+      --gap-desktop-nav-list: var(--spacing-400);
+
+      --gap-grid-lg: var(--spacing-1600);
+
+      --gap-product-gallery: var(--spacing-400);
+      --gap-thumbnail-list: var(--spacing-400);
+
+      --margin-inline-box-lg: 13.125rem; /* 210px */
+      --padding-block-start-box-lg: var(--spacing-1200);
+      --margin-block-end-box-lg: var(--spacing-1600);
+
+      --gap-buttons-group: var(--spacing-200);
+
+      --stack-sm: var(--spacing-400);
+
+      --gap-price-group: var(--spacing-200);
+    }
+  }
 }

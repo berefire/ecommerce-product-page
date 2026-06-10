@@ -3,17 +3,27 @@
         padding-block-start: var(--padding-block-start-box, 0);
         padding-block-end: var(--padding-block-end-box, 0);
         padding-inline: var(--padding-inline-box, 0);
+        margin-block-start: var(--margin-block-start-box, 0);
+        margin-inline: var(--margin-inline-box, 0);
+        margin-block-end: var(--margin-block-end-box, 0);
     }
 
     .box--xs {
-        --padding-block-start-box: var(--padding-block-start-box-xs);
         --padding-block-end-box: var(--padding-block-end-box-xs);
-        --padding-inline-box: var(--padding-inline-box-xs);
+        --margin-block-start-box: var(--margin-block-start-box-xs, 0);
+        --margin-inline-box: var(--margin-inline-box-xs, 0);
     }
 
     .box--sm {
-        --padding-block-start-box: var(--padding-block-start-box-sm);
         --padding-block-end-box: var(--padding-block-end-box-sm);
         --padding-inline-box: var(--padding-inline-box-sm);
+        --padding-block-start-box: var(--padding-block-start-box-sm);
+    }
+
+    .box--lg {
+        margin-inline: var(--margin-inline-box-lg, 0);
+        --padding-block-start-box: var(--padding-block-start-box-lg, 0);
+        --padding-block-end-box: var(--padding-block-end-box-lg, 0);
+        margin-block-end: var(--margin-block-end-box-lg, 0);
     }
 }

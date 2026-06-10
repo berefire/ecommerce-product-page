@@ -3,15 +3,73 @@
     position: relative;
   }
 
-  .product-image {
-    display: block;
-    inline-size: 100%;
-    block-size: auto;
-  }
-
   .product-image-trigger {
+    display: block;
+
+    inline-size: 100%;
+    block-size: 100%;
+
     cursor: default;
   }
 
-  
+  .product-image {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  .thumbnail-list {
+    display: none;
+  }
+
+  @media (min-width: 48em) {
+    .gallery-wrapper {
+      block-size: 20rem;
+    }
+
+    .product-image {
+      block-size: 100%;
+      object-fit: cover;
+      object-position: center 64%;
+      border-radius: 0.9375rem;
+    }
+  }
+
+  @media (min-width: 64em) {
+    .product-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-product-gallery);
+    }
+
+    .product-image {
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: center 40%;
+      border-radius: 0.9375rem;
+    }
+
+    .thumbnail-list {
+      display: flex;
+      flex-direction: row;
+      gap: var(--gap-thumbnail-list);
+    }
+
+    .thumbnail-list .thumbnail-item {
+      flex: 1;
+    }
+
+    .thumbnail-button {
+      display:block;
+      inline-size: 100%;
+      border-radius: 0.625rem;
+    }
+
+    .thumbnail-button img {
+      display: block;
+      inline-size: 100%;
+      block-size: auto;
+      border-radius: inherit;
+    }
+  }
 }

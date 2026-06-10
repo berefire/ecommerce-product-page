@@ -1,8 +1,8 @@
 @layer utilities {
     .text-preset-1 {
-        font-size: var(--text-preset-1-size);
-        line-height: var(--text-preset-1-lh);
-        letter-spacing: var(--text-preset-1-ls);
+        font-size: var(--text-preset-2-size);
+        line-height: var(--text-preset-2-lh);
+        letter-spacing: var(--text-preset-2-ls);
         font-weight: var(--fw-bold);
     }
 
@@ -20,14 +20,9 @@
         font-weight: var(--fw-bold);
     }
 
-    .text-preset-3--regular {
-        font-size: var(--text-preset-3-size);
-        line-height: var(--text-preset-3-lh);
-        letter-spacing: var(--text-preset-3-ls);
-        font-weight: var(--fw-regular);
-    }
+    
 
-    .text-preset-4 {
+    .text-preset-4, .text-preset-3--regular {
         font-size: var(--text-preset-4-size);
         line-height: var(--text-preset-4-lh);
         letter-spacing: var(--text-preset-4-ls);
@@ -47,4 +42,20 @@
         letter-spacing: var(--text-preset-6-ls);
         font-weight: var(--fw-bold);
     }
+
+    @media (min-width: 48em) {
+       .text-preset-1 {
+        font-size: var(--text-preset-1-size);
+        line-height: var(--text-preset-1-lh);
+        letter-spacing: var(--text-preset-1-ls);
+        font-weight: var(--fw-bold);
+    }
+
+    .text-preset-4 {
+        font-size: var(--text-preset-3-size);
+        line-height: var(--text-preset-3-lh);
+        letter-spacing: var(--text-preset-3-ls);
+        font-weight: var(--fw-regular);
+    }
+}
 }

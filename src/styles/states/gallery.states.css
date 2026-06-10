@@ -1,0 +1,9 @@
+@layer states {
+    .thumbnail-button[aria-pressed="true"] {
+        outline: 0.125em solid var(--bg-thumbnail-button-pressed);
+    }
+
+    .thumbnail-button[aria-pressed="true"] img {
+        opacity: 0.3;
+    }
+}
