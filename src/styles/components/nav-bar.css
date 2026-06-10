@@ -3,7 +3,7 @@
     position: relative;
   }
 
-.site-header {
+  .site-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,17 +33,13 @@
 
   @media (min-width: 48em) {
     .site-header {
-        padding-block-end: 0;
+      block-size: 5.125rem;
       border-block-end: 0.0625em solid var(--bg-border);
     }
 
     .avatar {
       inline-size: 3.125rem;
       block-size: 3.125rem;
-    }
-
-    .header-content {
-      outline: 1px solid blue;
     }
   }
 
@@ -65,9 +61,9 @@
     }
 
     .desktop-nav-list a {
-        display: flex;
-        align-items: center;
-        block-size: 100%;
+      display: flex;
+      align-items: center;
+      block-size: 100%;
       position: relative;
     }
   }

@@ -12,6 +12,10 @@
     flex-direction: column;
   }
 
+  footer {
+    margin-top: auto;
+  }
+
   svg {
     display: block;
   }

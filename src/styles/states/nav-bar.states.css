@@ -10,7 +10,7 @@
       position: absolute;
 
       inset-inline: 0;
-      inset-block-end: 0; /* depende del padding */
+      inset-block-end: -2.9rem; 
 
       block-size: 0.25rem;
       background-color: var(--bg-desktop-nav-list-hover);
