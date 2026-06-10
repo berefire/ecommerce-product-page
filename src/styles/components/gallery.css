@@ -8,6 +8,7 @@
     inline-size: 100%;
     block-size: 100%;
     cursor: default;
+    pointer-events: none;
   }
 
   .product-image {
@@ -47,6 +48,7 @@
 
     .product-image-trigger {
       cursor: pointer;
+      pointer-events: auto;
     }
 
     .product-image {
