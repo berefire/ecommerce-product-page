@@ -20,10 +20,17 @@
         --padding-block-start-box: var(--padding-block-start-box-sm);
     }
 
+    .box--md {
+        --padding-block-end-box: var(--padding-block-end-box-md);
+        --padding-inline-box: var(--padding-inline-box-md);
+        --padding-block-start-box: var(--padding-block-start-box-md);
+    }
+
     .box--lg {
         margin-inline: var(--margin-inline-box-lg, 0);
         --padding-block-start-box: var(--padding-block-start-box-lg, 0);
         --padding-block-end-box: var(--padding-block-end-box-lg, 0);
         margin-block-end: var(--margin-block-end-box-lg, 0);
     }
+
 }

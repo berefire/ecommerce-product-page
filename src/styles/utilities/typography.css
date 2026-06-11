@@ -43,6 +43,13 @@
         font-weight: var(--fw-bold);
     }
 
+    .text-preset-7 {
+        font-size: var(--text-preset-7-size);
+        line-height: var(--text-preset-7-lh);
+        letter-spacing: var(--text-preset-7-ls);
+        font-weight: var(--fw-bold);
+    }
+
     @media (min-width: 48em) {
        .text-preset-1 {
         font-size: var(--text-preset-1-size);

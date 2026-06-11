@@ -13,6 +13,10 @@
     --padding-inline-box-sm: var(--spacing-300);
     --padding-block-start-box-sm: 0;
 
+    --padding-block-end-box-md: var(--spacing-300);
+    --padding-block-start-box-md: var(--spacing-300);
+    --padding-inline-box-md: var(--spacing-300);
+
     --inset-inline-start-previous-button: var(--spacing-200);
     --inset-inline-end-next-button: var(--spacing-200);
 
@@ -30,6 +34,11 @@
 
     --padding-block-add-to-cart-button: var(--spacing-200);
     --padding-inline-add-to-cart-button: var(--spacing-1300);
+
+    --gap-mobile-nav-content: var(--spacing-700);
+    --gap-mobile-nav-list: var(--spacing-300);
+
+    --max-inline-size-mobile-nav-content: 15.625rem; /* 250px */
   }
 
   @media (min-width: 48em) {
@@ -56,6 +65,12 @@
 
       --stack-xs: var(--spacing-300);
       --stack-sm: var(--spacing-300);
+
+      --max-inline-size-mobile-nav-content: 18.75rem; /* 300px */
+
+      --padding-block-end-box-md: var(--spacing-600);
+      --padding-block-start-box-md: var(--spacing-600);
+      --padding-inline-box-md: var(--spacing-1000);
     }
   }
 

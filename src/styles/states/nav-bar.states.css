@@ -1,8 +1,12 @@
 @layer states {
-.avatar:hover {
+  .avatar:hover {
     border-radius: 50%;
     border: 0.125em solid var(--bg-avatar-hover);
-}
+  }
+
+  .mobile-nav-list a:hover {
+    color: var(--bg-mobile-nav-list-hover);
+  }
 
   @media (min-width: 64em) {
     .desktop-nav a:hover::after {
@@ -10,7 +14,7 @@
       position: absolute;
 
       inset-inline: 0;
-      inset-block-end: -2.9rem; 
+      inset-block-end: -2.9rem;
 
       block-size: 0.25rem;
       background-color: var(--bg-desktop-nav-list-hover);

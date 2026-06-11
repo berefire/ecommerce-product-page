@@ -35,5 +35,11 @@
         --bg-avatar-hover: var(--orange-500);
 
         --bg-thumbnail-button-pressed: var(--orange-500);
+
+        --bg-close-icon: var(--grey-500);
+        --bg-close-icon-hover: var(--orange-500);
+
+        --fc-mobile-nav-list: var(--grey-950);
+        --bg-mobile-nav-list-hover: var(--orange-500);
     }
 }

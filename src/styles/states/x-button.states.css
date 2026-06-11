@@ -1,0 +1,5 @@
+@layer states {
+    .close-button-menu:hover {
+        color: var(--bg-close-icon-hover);
+    }
+}

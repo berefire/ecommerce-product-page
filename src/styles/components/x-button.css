@@ -1,0 +1,6 @@
+@layer components {
+    .close-button-menu {
+       color: var(--bg-close-icon);
+       justify-content: start;
+    }
+}

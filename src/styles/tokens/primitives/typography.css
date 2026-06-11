@@ -26,7 +26,11 @@
     --text-preset-6-size: 0.75rem; /* 12px */
     --text-preset-6-lh: 0.9375rem; /* 15px */
     --text-preset-6-ls: 0.116rem; /* 1.856px */
-    
+
+    --text-preset-7-size: 1.125rem; /* 18px */
+    --text-preset-7-lh: 1.625rem; /* 26px */
+    --text-preset-7-ls: 0;
+
     --fw-regular: 400;
     --fw-bold: 700;
   }

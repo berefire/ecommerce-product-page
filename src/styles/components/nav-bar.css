@@ -31,6 +31,36 @@
     display: none;
   }
 
+  .mobile-nav[open]::backdrop {
+    background: rgb(0 0 0 / 0.75);
+  }
+
+  .mobile-nav-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-mobile-nav-content);
+    inline-size: min(70vw, var(--max-inline-size-mobile-nav-content));
+    block-size: 100vh;
+    background-color: var(--bg-color-primary);
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 300ms ease-out;
+    will-change: transform;
+  }
+
+  .mobile-nav.is-open .mobile-nav-content {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-mobile-nav-list);
+  }
+
+  .mobile-nav-list a {
+    color: var(--fc-mobile-nav-list);
+  }
+
   @media (min-width: 48em) {
     .site-header {
       block-size: 5.125rem;
