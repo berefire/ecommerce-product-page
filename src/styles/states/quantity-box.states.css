@@ -2,4 +2,9 @@
     .quantity-button:hover {
         color: var(--bg-quantity-button-hover);
     }
+
+    .quantity-button:focus-visible {
+        outline: 0.187em solid currentColor;
+        outline-offset: 0.25em;
+    }
 }

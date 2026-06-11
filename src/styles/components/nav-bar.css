@@ -15,15 +15,19 @@
     block-size: 1.5rem;
   }
 
-  .icon-menu {
+  .avatar-button {
+    border-radius: 50%;
+  }
+
+  .icon-menu, .mobile-nav-button {
     color: var(--bg-icon-menu);
   }
 
-  .icon-cart {
+  .icon-cart, .cart-button {
     color: var(--bg-icon-cart);
   }
 
-  .icon-logo {
+  .icon-logo, .site-logo {
     color: var(--bg-icon-logo);
   }
 

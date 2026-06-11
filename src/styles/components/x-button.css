@@ -1,6 +1,14 @@
 @layer components {
-    .close-button-menu {
-       color: var(--bg-close-icon);
-       justify-content: start;
-    }
+  .close-button-menu {
+    color: var(--bg-close-icon);
+    justify-content: start;
+    inline-size: 0.875rem;
+    block-size: 0.875rem;
+    border-radius: 50%;
+  }
+
+  .close-button-menu:focus-visible {
+    outline: 0.187em solid currentColor;
+    outline-offset: 0.25em;
+  }
 }

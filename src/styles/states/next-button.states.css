@@ -2,4 +2,9 @@
     .gallery-button:hover {
         color: var(--bg-gallery-button-hover);
     }
+
+    .gallery-button:focus-visible{
+        outline: 0.187em solid currentColor;
+        outline-offset: 0.25em;
+    }
 }
