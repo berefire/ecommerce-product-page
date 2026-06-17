@@ -47,5 +47,8 @@
 
         --bg-lightbox-thumbnail-button-focus: var(--orange-500);
         --bg-thumbnail-button-focus: var(--orange-500);
+
+        --bg-cart-badge: var(--orange-500);
+        --fc-cart-badge: var(--white);
     }
 }
