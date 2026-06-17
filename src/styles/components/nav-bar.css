@@ -43,7 +43,7 @@
     color: var(--fc-cart-badge);
 
     font-size: 0.625rem;
-    font-weight: 700;
+    font-weight: var(--fw-bold);
   }
 
   .site-logo {
