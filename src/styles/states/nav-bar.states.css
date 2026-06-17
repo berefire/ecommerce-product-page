@@ -3,6 +3,11 @@
     border: 0.125em solid var(--bg-avatar-hover);
   }
 
+  .avatar-button:focus-visible {
+    outline: 0.187em solid var(--bg-avatar-hover);
+    outline-offset: 0.25em;
+  }
+
   .mobile-nav-list a:hover {
     color: var(--bg-mobile-nav-list-hover);
   }
@@ -10,8 +15,7 @@
   .mobile-nav-button:focus-visible,
   .site-logo:focus-visible,
   .cart-button:focus-visible,
-  .mobile-nav-list a:focus-visible,
-  .avatar-button:focus-visible {
+  .mobile-nav-list a:focus-visible {
     outline: 0.187em solid currentColor;
     outline-offset: 0.25em;
   }
@@ -26,6 +30,11 @@
 
       block-size: 0.25rem;
       background-color: var(--bg-desktop-nav-list-hover);
+    }
+
+    .desktop-nav a:focus-visible {
+      outline: 0.187em solid currentColor;
+      outline-offset: 0.25em;
     }
   }
 }

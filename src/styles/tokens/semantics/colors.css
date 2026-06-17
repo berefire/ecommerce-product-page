@@ -41,5 +41,11 @@
 
         --fc-mobile-nav-list: var(--grey-950);
         --bg-mobile-nav-list-hover: var(--orange-500);
+
+        --bg-lightbox-close-icon: var(--white);
+        --bg-lightbox-close-icon-hover: var(--orange-500);
+
+        --bg-lightbox-thumbnail-button-focus: var(--orange-500);
+        --bg-thumbnail-button-focus: var(--orange-500);
     }
 }

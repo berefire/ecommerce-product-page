@@ -1,0 +1,40 @@
+@layer states {
+  .lightbox-thumbnail-button[aria-pressed="true"] {
+    outline: 0.125em solid var(--bg-thumbnail-button-pressed);
+  }
+
+  .lightbox-thumbnail-button:is(
+      :hover,
+      :focus-visible,
+      [aria-pressed="true"]
+    )::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  .lightbox-thumbnail-button:hover::after,
+  .lightbox-thumbnail-button:focus-visible::after {
+    background: rgb(255 255 255 / 0.5);
+  }
+
+  .lightbox-thumbnail-button[aria-pressed="true"]::after {
+    background: rgb(255 255 255 / 0.7);
+  }
+
+  .lightbox-close-button:hover {
+    color: var(--bg-lightbox-close-icon-hover);
+  }
+
+  .lightbox-close-button:focus-visible {
+    outline: 0.187em solid currentColor;
+    outline-offset: 0.25em;
+  }
+
+  .lightbox-thumbnail-button:focus-visible {
+    outline: 0.187em solid var(--bg-lightbox-thumbnail-button-focus);
+    outline-offset: 0.25em;
+  }
+}

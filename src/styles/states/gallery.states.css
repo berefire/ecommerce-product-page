@@ -1,9 +1,27 @@
 @layer states {
-    .thumbnail-button[aria-pressed="true"] {
-        outline: 0.125em solid var(--bg-thumbnail-button-pressed);
-    }
+  .thumbnail-button[aria-pressed="true"] {
+    outline: 0.125em solid var(--bg-thumbnail-button-pressed);
+  }
 
-    .thumbnail-button[aria-pressed="true"] img {
-        opacity: 0.3;
-    }
+  .thumbnail-button[aria-pressed="true"] img {
+    opacity: 0.3;
+  }
+
+  .thumbnail-button:hover:not([aria-pressed="true"]) {
+    opacity: 0.6;
+  }
+
+  .thumbnail-button:focus-visible {
+    outline: 0.187em solid var(--bg-thumbnail-button-focus);
+    outline-offset: 0.25em;
+  }
+
+  .thumbnail-button:not([aria-pressed="true"]):focus-visible img {
+    opacity: 0.6;
+  }
+
+  .product-image-trigger:focus-visible {
+    outline: 0.187em solid var(--bg-thumbnail-button-focus);
+    outline-offset: 0.25em;
+  }
 }

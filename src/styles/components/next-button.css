@@ -9,13 +9,15 @@
     align-items: center;
     justify-content: center;
 
-    inline-size: 2.5rem;
-    block-size: 2.5rem;
-
     border: none;
     border-radius: 50%;
     background-color: var(--white);
     color: var(--bg-gallery-button);
+  }
+
+  .gallery-button {
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
   }
 
   .gallery-button--previous {
@@ -26,6 +28,11 @@
     inset-inline-end: var(--inset-inline-end-next-button);
   }
 
+  .lightbox-gallery-button {
+    display: none;
+  }
+
+
   @media (min-width: 48em) {
     .gallery-button {
       translate: 0 10;
@@ -35,6 +42,35 @@
   @media (min-width: 64em) {
     .gallery-button {
       display: none;
+    }
+
+    .lightbox-gallery-button {
+      position: absolute;
+      inset-block-start: 50%;
+
+      translate: 0 -50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: none;
+      border-radius: 50%;
+      background-color: var(--white);
+      color: var(--bg-gallery-button);
+    }
+
+    .lightbox-gallery-button {
+      inline-size: 3.5rem;
+      block-size: 3.5rem;
+    }
+
+    .lightbox-gallery-button--previous {
+      inset-inline-start: var(--inset-inline-start-lightbox-previous-button);
+    }
+
+    .lightbox-gallery-button--next {
+      inset-inline-end: var(--inset-inline-end-lightbox-next-button);
     }
   }
 }

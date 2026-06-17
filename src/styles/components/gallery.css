@@ -29,7 +29,7 @@
     .product-image {
       block-size: 100%;
       object-fit: cover;
-      object-position: center 64%;
+      object-position: center 35%;
       border-radius: 0.9375rem;
     }
   }
@@ -38,7 +38,6 @@
     .gallery-wrapper {
       block-size: auto;
     }
-
 
     .product-gallery {
       display: flex;
@@ -49,6 +48,7 @@
     .product-image-trigger {
       cursor: pointer;
       pointer-events: auto;
+      border-radius: 0.9375rem;
     }
 
     .product-image {

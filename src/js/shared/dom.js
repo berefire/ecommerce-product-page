@@ -7,6 +7,24 @@ const SELECTORS = {
     mobileNav: '#mobile-nav',
     mobileNavContent: '.mobile-nav-content',
     mobileNavLinks: '.mobile-nav .nav-link',
+
+    // Gallery
+    productImage: '.product-image',
+    galleryPreviousButton: '.gallery-button--previous',
+    galleryNextButton: '.gallery-button--next',
+    thumbnailButtons: '.thumbnail-button',
+    galleryAnnouncer: '#gallery-announcer',
+
+    // Lightbox
+    lightbox: '.lightbox',
+    lightboxCloseButton: '.lightbox-close-button',
+    productImageTrigger: '.product-image-trigger',
+
+    // Lightbox Gallery
+    lightboxImage: '.lightbox-image',
+    lightboxPreviousButton: '.lightbox-gallery-button--previous',
+    lightboxNextButton: '.lightbox-gallery-button--next',
+    lightboxThumbnailButtons: '.lightbox-thumbnail-button',
 }
 
 function isCollection(value){
@@ -58,6 +76,24 @@ function initDOMElements(){
         mobileNav: document.querySelector(SELECTORS.mobileNav),
         mobileNavContent: document.querySelector(SELECTORS.mobileNavContent),
         mobileNavLinks: document.querySelectorAll(SELECTORS.mobileNavLinks),
+
+        // Gallery
+        productImage: document.querySelector(SELECTORS.productImage),
+        galleryPreviousButton: document.querySelector(SELECTORS.galleryPreviousButton),
+        galleryNextButton: document.querySelector(SELECTORS.galleryNextButton),
+        thumbnailButtons: document.querySelectorAll(SELECTORS.thumbnailButtons),
+        galleryAnnouncer: document.querySelector(SELECTORS.galleryAnnouncer),
+
+        // Lightbox
+        lightbox: document.querySelector(SELECTORS.lightbox),
+        lightboxCloseButton: document.querySelector(SELECTORS.lightboxCloseButton),
+        productImageTrigger: document.querySelector(SELECTORS.productImageTrigger),
+
+        // Lightbox Gallery
+        lightboxImage: document.querySelector(SELECTORS.lightboxImage),
+        lightboxPreviousButton: document.querySelector(SELECTORS.lightboxPreviousButton),
+        lightboxNextButton: document.querySelector(SELECTORS.lightboxNextButton),
+        lightboxThumbnailButtons: document.querySelectorAll(SELECTORS.lightboxThumbnailButtons),
     };
 
     Object.entries(DOM).forEach(([key, element]) => {

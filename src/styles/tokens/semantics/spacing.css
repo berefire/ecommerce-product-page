@@ -97,6 +97,14 @@
       --stack-sm: var(--spacing-400);
 
       --gap-price-group: var(--spacing-200);
+
+
+      --gap-lightbox-content: var(--spacing-500);
+      --gap-lightbox-thumbnail-list: var(--spacing-300);
+      --gap-lightbox: var(--spacing-300);
+
+      --inset-inline-start-lightbox-previous-button: calc(var(--spacing-400) * -1);
+      --inset-inline-end-lightbox-next-button: calc(var(--spacing-400) * -1);
     }
   }
 }

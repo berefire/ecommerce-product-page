@@ -1,3 +1,4 @@
+import { onDesktopChange } from "../../shared/media.js";
 import { addSafeEventListener } from "../../shared/dom.js";
 
 export function bindMenuEvents({
@@ -13,5 +14,11 @@ export function bindMenuEvents({
     addSafeEventListener(menu, "cancel", (event) => {
         event.preventDefault();
         menuController.closeMenu();
-    }, "mobileMenu",);
+    }, "Mobile Menu",);
+
+    onDesktopChange((event) => {
+        if (event.matches) {
+            menuController.closeMenu();
+        }
+    });
 }

@@ -1,88 +1,113 @@
+import { isDesktop } from "../../shared/media.js";
 import { prefersReducedMotion } from "../../shared/accessibility.js";
+import { lockScroll, unlockScroll } from "../../shared/scroll.js";
 
 export function createMenuController({
-    menu,
-    menuContent,
-    menuButton,
-    firstLink,
+  menu,
+  menuContent,
+  menuButton,
+  firstLink,
 }) {
-    let isClosing = false;
+  let isClosing = false;
 
-    function setExpanded(expanded){
-        menuButton.setAttribute("aria-expanded", String(expanded));
+  function setExpanded(expanded) {
+    menuButton.setAttribute(
+      "aria-expanded",
+      String(expanded)
+    );
+  }
+
+  function focusFirstLink() {
+    firstLink.focus();
+  }
+
+  function restoreFocus() {
+    menuButton.focus();
+  }
+
+  function finishClose() {
+    if (!menu.open) {
+      return;
     }
 
-    function lockScroll(){
-        document.body.classList.add("u-no-scroll");
+    menu.close();
+    restoreFocus();
+    isClosing = false;
+  }
+
+  function openMenu() {
+    if (isDesktop()) {
+      return;
     }
 
-    function unlockScroll(){
-        document.body.classList.remove("u-no-scroll");
+    if (menu.open || isClosing) {
+      return;
     }
 
-    function focusFirstLink(){
-        firstLink.focus();
-    }
+    menu.showModal();
+    
+    requestAnimationFrame(() => {
+      menu.getBoundingClientRect();
+      menu.classList.add("animate");
+    });
 
-    function restoreFocus(){
-        menuButton.focus();
-    }
+    setExpanded(true);
 
-    function finishClose(){
-        menu.close();
-        restoreFocus();
-        isClosing = false;
-    }
+    lockScroll();
 
-    function openMenu(){
-
-        if (menu.open || isClosing) {
-            return;
-        }
-
-        menu.showModal();
-
-        requestAnimationFrame(() => {
-            menuContent.getBoundingClientRect();
-            menu.classList.add("is-open");
-        });
-
-        setExpanded(true);
-        lockScroll();
+    setTimeout(() => {
+      if (menu.open) {
         focusFirstLink();
+      }
+    }, 350);
+  }
+
+  function closeMenu() {
+    if (!menu.open || isClosing) {
+      return;
     }
 
-    function closeMenu(){
-        if (!menu.open || isClosing) {
-            return;
-        }
+    isClosing = true;
 
-        isClosing = true;
+    setExpanded(false);
 
-        setExpanded(false);
-        unlockScroll();
-        menu.classList.remove("is-open");
+    unlockScroll();
 
-        if (prefersReducedMotion()){
-            finishClose();
-            return;
-        }
+    menu.classList.remove("animate");
 
-        const timeoutId = setTimeout( finishClose, 350);
-
-        menuContent.addEventListener("transitionend", () => {
-            clearTimeout(timeoutId);
-            finishClose();
-        }, { once: true });
+    if (prefersReducedMotion()) {
+      finishClose();
+      return;
     }
 
-    function toggleMenu(){
-        menu.open ? closeMenu() : openMenu();
-    }
+    const handleTransitionEnd = (event) => {
+      if (event.target !== menuContent) {
+        return;
+      }
 
-    return {
-        toggleMenu,
-        openMenu,
-        closeMenu,
+      menuContent.removeEventListener(
+        "transitionend",
+        handleTransitionEnd
+      );
+
+      finishClose();
     };
+
+    menuContent.addEventListener(
+      "transitionend",
+      handleTransitionEnd
+    );
+  }
+
+  function toggleMenu() {
+    menu.open
+      ? closeMenu()
+      : openMenu();
+  }
+
+  return {
+    toggleMenu,
+    openMenu,
+    closeMenu,
+  };
 }
