@@ -16,7 +16,8 @@
     margin-top: auto;
   }
 
-  svg, img {
+  svg,
+  img {
     display: block;
   }
 
@@ -43,6 +44,19 @@
     padding: 0;
     border: 0;
     background: transparent;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input {
+    cursor: pointer;
+    border: 0.125em solid transparent;
+    outline: none;
+    transition: border-color 0.2s ease;
   }
 
   @supports (min-block-size: 100dvh) and (block-size: 100dvh) {
