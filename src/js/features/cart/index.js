@@ -9,7 +9,7 @@ export function initializeCart() {
         createCartView({
             badgeElement: DOM.cartBadge,
             emptyMessageElement: DOM.cartEmptyMessage,
-            cartContentElement: DOM.cartContent,
+            cartFilledContentElement: DOM.cartFilledContent,
             imageElement: DOM.cartProductImage,
             titleElement: DOM.cartProductTitle,
             priceElement: DOM.cartProductPrice,

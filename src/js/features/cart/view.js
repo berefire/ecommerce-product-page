@@ -1,7 +1,7 @@
 export function createCartView({
     badgeElement,
     emptyMessageElement,
-    cartContentElement,
+    cartFilledContentElement,
     imageElement,
     titleElement,
     priceElement,
@@ -14,7 +14,7 @@ export function createCartView({
             badgeElement.hidden = true;
 
             emptyMessageElement.hidden = false;
-            cartContentElement.hidden = true;
+            cartFilledContentElement.hidden = true;
             checkoutButton.hidden = true;
 
             return;
@@ -25,7 +25,7 @@ export function createCartView({
         badgeElement.hidden = false;
         badgeElement.textContent = item.quantity;
         emptyMessageElement.hidden = true;
-        cartContentElement.hidden = false;
+        cartFilledContentElement.hidden = false;
         checkoutButton.hidden = false;
 
         imageElement.src = item.image;

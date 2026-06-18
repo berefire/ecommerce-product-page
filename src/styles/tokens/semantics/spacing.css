@@ -41,7 +41,12 @@
     --max-inline-size-mobile-nav-content: 15.625rem; /* 250px */
     --padding-block-cart-header: var(--spacing-300);
 
-    --padding-block-start-cart-empty-message: var(--spacing-900);
+    --padding-block-start-cart-empty-message: var(--spacing-600);
+
+    --padding-inline-cart-body: var(--spacing-300);
+    --padding-block-cart-body: var(--spacing-300);
+    
+    --gap-cart-content: var(--spacing-200);
 
 
   }

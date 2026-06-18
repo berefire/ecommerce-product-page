@@ -30,9 +30,11 @@
         justify-content: space-between;
     }
 
-    .cart-list-items {
+    .cart-body {
         display: grid;
-        place-items: center center;
+        place-items: center;
+        padding-inline: var(--padding-inline-cart-body);
+        padding-block: var(--padding-block-cart-body);
     }
 
     .cart-title {
@@ -42,6 +44,13 @@
     .cart-empty-message {
         color: var(--fc-cart-empty-message);
         padding-block-start: var(--padding-block-start-cart-empty-message);
+    }
+
+    .cart-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--gap-cart-content);
     }
 
     @media (min-width: 48em){
