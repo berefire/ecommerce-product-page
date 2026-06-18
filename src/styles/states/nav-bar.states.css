@@ -20,6 +20,10 @@
     outline-offset: 0.25em;
   }
 
+  .cart-button[aria-expanded="true"] {
+    color: var(--bg-cart-icon-pressed);
+  }
+
   @media (min-width: 64em) {
     .desktop-nav a:hover::after {
       content: "";

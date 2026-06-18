@@ -50,6 +50,29 @@ export const REQUIRED_ELEMENTS = [
     "lightboxPreviousButton",
     "lightboxNextButton",
     "lightboxThumbnailButtons",
+
+    // Quantity Box
+    "quantityInput",
+    "quantityIncreaseButton",
+    "quantityDecreaseButton",
+
+    // Add To Cart
+    "addToCartButton",
+
+    // Cart
+    "cartButton",
+    "cartBadge",
+    "cartDialog",
+    "cartCloseButton",
+    "cartEmptyMessage",
+    "cartContent",
+    "cartProductImage",
+    "cartProductTitle",
+    "cartProductPrice",
+    "cartProuctQuantity",
+    "cartProductTotal",
+    "cartDeleteButton",
+    "cartCheckoutButton",
 ]
 
 export const MAX_QUANTITY = 99;

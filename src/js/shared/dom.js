@@ -25,6 +25,29 @@ const SELECTORS = {
     lightboxPreviousButton: '.lightbox-gallery-button--previous',
     lightboxNextButton: '.lightbox-gallery-button--next',
     lightboxThumbnailButtons: '.lightbox-thumbnail-button',
+
+    // Quantity Box
+    quantityInput: '#quantity',
+    quantityIncreaseButton: '.quantity-button--increase',
+    quantityDecreaseButton: '.quantity-button--decrease',
+
+    // Add To Cart
+    addToCartButton: '.add-to-cart-button',
+
+    // Cart
+    cartButton: '.cart-button',
+    cartBadge: '.cart-badge',
+    cartDialog: '.cart-dialog',
+    cartCloseButton: '.cart-close-button',
+    cartEmptyMessage: '.cart-empty-message',
+    cartContent: '.cart-content',
+    cartProductImage: '.cart-product-image',
+    cartProductTitle: '.cart-product-title',
+    cartProductPrice: '.cart-product-price',
+    cartProductQuantity: '.cart-product-quantity',
+    cartProductTotal: '.cart-product-total',
+    cartDeleteButton: '.cart-delete-button',
+    cartCheckoutButton: '.cart-checkout-button',
 }
 
 function isCollection(value){
@@ -94,6 +117,29 @@ function initDOMElements(){
         lightboxPreviousButton: document.querySelector(SELECTORS.lightboxPreviousButton),
         lightboxNextButton: document.querySelector(SELECTORS.lightboxNextButton),
         lightboxThumbnailButtons: document.querySelectorAll(SELECTORS.lightboxThumbnailButtons),
+
+        // Quantity Box
+        quantityInput: document.querySelector(SELECTORS.quantityInput),
+        quantityIncreaseButton: document.querySelector(SELECTORS.quantityIncreaseButton),
+        quantityDecreaseButton: document.querySelector(SELECTORS.quantityDecreaseButton),
+
+        // Add To Cart
+        addToCartButton: document.querySelector(SELECTORS.addToCartButton),
+
+        // Cart
+        cartButton: document.querySelector(SELECTORS.cartButton),
+        cartBadge: document.querySelector(SELECTORS.cartBadge),
+        cartDialog: document.querySelector(SELECTORS.cartDialog),
+        cartCloseButton: document.querySelector(SELECTORS.cartCloseButton),
+        cartEmptyMessage: document.querySelector(SELECTORS.cartEmptyMessage),
+        cartContent: document.querySelector(SELECTORS.cartContent),
+        cartProductImage: document.querySelector(SELECTORS.cartProductImage),
+        cartProductTitle: document.querySelector(SELECTORS.cartProductTitle),
+        cartProductPrice: document.querySelector(SELECTORS.cartProductPrice),
+        cartProductQuantity: document.querySelector(SELECTORS.cartProductQuantity),
+        cartProductTotal: document.querySelector(SELECTORS.cartProductTotal),
+        cartDeleteButton: document.querySelector(SELECTORS.cartDeleteButton),
+        cartCheckoutButton: document.querySelector(SELECTORS.cartCheckoutButton),
     };
 
     Object.entries(DOM).forEach(([key, element]) => {

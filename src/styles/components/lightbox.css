@@ -21,22 +21,6 @@
       background: rgb(0 0 0 / 0.75);
     }
 
-    .lightbox-close-button {
-      inline-size: 1.5rem;
-      block-size: 1.5rem;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--bg-lightbox-close-icon);
-      border-radius: 50%;
-    }
-
-    .lightbox-close-button svg {
-      inline-size: 100%;
-      block-size: 100%;
-    }
-
     .lightbox-image {
       display: block;
       inline-size: 100%;

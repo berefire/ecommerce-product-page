@@ -1,9 +1,27 @@
 @layer components {
-  .close-button-menu {
+  .close-button-menu, .cart-close-button {
     color: var(--bg-close-icon);
     justify-content: start;
     inline-size: 0.875rem;
     block-size: 0.875rem;
     border-radius: 50%;
+  }
+
+  @media (min-width: 64em){
+    .lightbox-close-button {
+      inline-size: 1.5rem;
+      block-size: 1.5rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bg-lightbox-close-icon);
+      border-radius: 50%;
+    }
+
+    .lightbox-close-button svg {
+      inline-size: 100%;
+      block-size: 100%;
+    }
   }
 }

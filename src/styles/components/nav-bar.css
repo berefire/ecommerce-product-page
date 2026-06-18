@@ -46,6 +46,10 @@
     font-weight: var(--fw-bold);
   }
 
+  .cart-badge[hidden] {
+    display: none;
+  }
+
   .site-logo {
     color: var(--bg-icon-logo);
   }

@@ -4,6 +4,7 @@
 
         --bg-icon-menu: var(--grey-500);
         --bg-icon-cart: var(--grey-500);
+        --bg-cart-icon-pressed: var(--grey-950);
         --bg-icon-logo: var(--grey-950);
 
         --bg-gallery-button: var(--grey-950);
@@ -50,5 +51,10 @@
 
         --bg-cart-badge: var(--orange-500);
         --fc-cart-badge: var(--white);
+
+        --bg-cart-dialog: var(--white);
+
+        --fc-cart-title: var(--grey-950);
+        --fc-cart-empty-message: var(--grey-500);
     }
 }

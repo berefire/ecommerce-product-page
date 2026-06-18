@@ -39,6 +39,11 @@
     --gap-mobile-nav-list: var(--spacing-300);
 
     --max-inline-size-mobile-nav-content: 15.625rem; /* 250px */
+    --padding-block-cart-header: var(--spacing-300);
+
+    --padding-block-start-cart-empty-message: var(--spacing-900);
+
+
   }
 
   @media (min-width: 48em) {
@@ -71,6 +76,8 @@
       --padding-block-end-box-md: var(--spacing-600);
       --padding-block-start-box-md: var(--spacing-600);
       --padding-inline-box-md: var(--spacing-1000);
+
+      --inset-inline-end-cart-dialog: var(--spacing-100);
     }
   }
 
@@ -105,6 +112,8 @@
 
       --inset-inline-start-lightbox-previous-button: calc(var(--spacing-400) * -1);
       --inset-inline-end-lightbox-next-button: calc(var(--spacing-400) * -1);
+
+      --inset-inline-end-cart-dialog: 5.5625rem;  /* 89px */ 
     }
   }
 }

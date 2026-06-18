@@ -24,15 +24,6 @@
     background: rgb(255 255 255 / 0.7);
   }
 
-  .lightbox-close-button:hover {
-    color: var(--bg-lightbox-close-icon-hover);
-  }
-
-  .lightbox-close-button:focus-visible {
-    outline: 0.187em solid currentColor;
-    outline-offset: 0.25em;
-  }
-
   .lightbox-thumbnail-button:focus-visible {
     outline: 0.187em solid var(--bg-lightbox-thumbnail-button-focus);
     outline-offset: 0.25em;
