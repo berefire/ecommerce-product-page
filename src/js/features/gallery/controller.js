@@ -1,4 +1,4 @@
-import { PRODUCT_IMAGES } from "../../shared/constants.js";
+import { PRODUCT_IMAGES } from "@js/shared/images.js";
 
 export function createGalleryController({
   imageElement,
@@ -19,6 +19,8 @@ export function createGalleryController({
 
     if (thumbnailButtons?.length) {
       thumbnailButtons.forEach((button, index) => {
+        const img = button.querySelector("img");
+        img.src = PRODUCT_IMAGES[index].thumbnail;
         button.setAttribute("aria-pressed", String(index === currentIndex));
       });
     }

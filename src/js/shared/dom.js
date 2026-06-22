@@ -1,6 +1,9 @@
-import { REQUIRED_ELEMENTS } from '../shared/constants.js';
+import { REQUIRED_ELEMENTS } from '@js/shared/constants.js';
 
 const SELECTORS = {
+    // Images
+    avatarImage: '.avatar',
+
     // Mobile menu
     mobileNavButton: '.mobile-nav-button',
     mobileCloseButton: '#close-nav',
@@ -93,6 +96,9 @@ export function addSafeEventListener(element, event, handler, context = "unknown
 
 function initDOMElements(){
     const DOM = {
+        // Images
+        avatarImage: document.querySelector(SELECTORS.avatarImage),
+
         // Mobile menu
         mobileNavButton: document.querySelector(SELECTORS.mobileNavButton),
         mobileCloseButton: document.querySelector(SELECTORS.mobileCloseButton),

@@ -1,4 +1,4 @@
-import { PRODUCT_IMAGES } from "../../shared/constants.js";
+import { PRODUCT_IMAGES } from "@js/shared/images.js";
 
 export function createAddToCartController({ quantityController, cartController}) {
     function addToCart(){
