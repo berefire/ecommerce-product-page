@@ -55,6 +55,8 @@
 
   @media (min-width: 48em) {
     :root {
+      --gap-cluster-sm: var(--spacing-600);
+
       --margin-block-start-box-xs: 1.75rem; /* 28px */
       --padding-block-end-box-xs: var(--spacing-400);
       --margin-inline-box-xs: var(--spacing-1000);
