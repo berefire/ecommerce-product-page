@@ -135,4 +135,10 @@
       position: relative;
     }
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mobile-nav-content {
+      transition: none;
+    }
+  }
 }

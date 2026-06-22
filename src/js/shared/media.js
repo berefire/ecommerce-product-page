@@ -9,7 +9,3 @@ export function isDesktop() {
 export function onDesktopChange(callback){
     desktopMediaQuery.addEventListener("change", callback);
 }
-
-export function prefersReducedMotion(){
-    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-}
