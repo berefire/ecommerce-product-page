@@ -1,22 +1,45 @@
-# Frontend Mentor - E-commerce product page
+# Frontend Mentor - E-commerce product page solution
 
-![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
+![GitHub last commit](https://img.shields.io/github/last-commit/berefire/ecommerce-product-page)
+![Repo size](https://img.shields.io/github/repo-size/berefire/ecommerce-product-page)
 
-## Welcome! 👋
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
+[![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+![Semantic HTML](https://img.shields.io/badge/Semantic%20HTML-ff9800?style=for-the-badge)
+![Accessibility](https://img.shields.io/badge/Accessibility-A11Y-0052cc?style=for-the-badge)
+![Responsive Layout](https://img.shields.io/badge/Responsive%20Layout-Full%20Support-blue?style=for-the-badge)
+![Mobile First](https://img.shields.io/badge/Mobile--First-Design-orange?style=for-the-badge)
+[![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](./assets/downloads/lighthouse-performance-report.pdf)
 
-Thanks for checking out this front-end coding challenge.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Table of contents
 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#️my-process)
+  - [Built with](#built-with)
+  - [Project Architecture](#project-architecture)
+  - [Accessibility Features](#accessibility-features)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [AI Collaboration](#ai-collaboration)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## The challenge
+---
 
-Your challenge is to build out this e-commerce product page and get it looking as close to the design as possible.
+## 📖Overview
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### The challenge
 
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -25,85 +48,214 @@ Your users should be able to:
 - Add items to the cart
 - View the cart and remove items from it
 
-### Want some support on the challenge? 
+---
 
-[Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### 📸Screenshot
 
-## Where to find everything
+#### Mobile (375x914)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+| _Main_ | _Menu_ |
+| ------ | ------ |
+| ![Mobile](./screenshots/mobile.png) | ![Mobile Menu](./screenshots/mobile-menu.png) |
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+| _Active - Basket Empty_ | _Active - Basket Filled_ |
+| ----------------------- | ------------------------ |
+| ![Mobile Basket Empty](./screenshots/mobile-empty.png) | ![Mobile Basket Filled](./screenshots/mobile-filled.png) |
 
-If you would like the Figma design file to gain experience using professional tools and build more accurate projects faster, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+#### Tablet (768x914)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+| _Main_ | _Menu_ |
+| ------ | ------ |
+| ![Tablet](./screenshots/tablet.png) | ![Tablet Menu](./screenshots/tablet-menu.png) |
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+| _Active - Basket Empty_ | _Active - Basket Filled_ |
+| ----------------------- | ------------------------ |
+| ![Tablet Basket Empty](./screenshots/tablet-empty.png) | ![Tablet Basket Filled](./screenshots/tablet-filled.png) |
 
-## Using AI coding assistants
+#### Desktop (1440x914)
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
+| _Main_ | _Lightbox_ |
+| ------ | ------ |
+| ![Desktop](./screenshots/desktop.png) | ![Desktop Lightbox](./screenshots/desktop-lightbox.png) |
 
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
+| _Active - Basket Empty_ | _Active - Basket Filled_ |
+| ----------------------- | ------------------------ |
+| ![Desktop Basket Empty](./screenshots/desktop-empty.png) | ![Desktop Basket Filled](./screenshots/desktop-filled.png) |
 
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
+---
 
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+### 🔗Links
 
-## Building your project
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [https://berefire.github.io/ecommerce-product-page/#](https://berefire.github.io/ecommerce-product-page/#)
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## ⚙️My process
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### 🛠Built with
 
-## Deploying your project
+- Semantic HTML5 markup
+- Modern CSS
+- CSS custom properties
+- Cube CSS Architecture
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Vainilla JavaScript (ES Modules)
+- Vite
+- GitHub Pages
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+---
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+### 🔎Project Architecture
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://www.frontendmentor.io/guides/hosting-your-solution).
+This project follows a modular JavaScript architecture where each feature is isolated into its own module.
 
-## Create a custom `README.md`
+```html
+src/ 
+├── assets/ 
+├── js/ 
+│ ├── features/ 
+│ │ ├── add-to-cart/ 
+│ │ ├── cart/ 
+│ │ ├── gallery/ 
+│ │ ├── lightbox/
+│ │ ├── lightbox-gallery/ 
+│ │ ├── menu/ 
+│ │ └── quantity-box/ 
+│ └── shared/ 
+│ ├── dom.js 
+│ ├── images.js 
+│ ├── media.js 
+│ ├── constants.js 
+│ └── scroll.js 
+└── styles/ 
+  ├──  tokens/ 
+  ├──  base/ 
+  ├──  layout/ 
+  ├──  components/ 
+  ├──  states/ 
+  └──  utilities/
+```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Each feature is responsible for its own:
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+- Controller
+- Event bindings
+- Initialization logic
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+This approach keeps components independent, maintainable, and easier to test.
 
-## Submitting your solution
+---
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://www.frontendmentor.io/guides/how-to-submit-solutions) for tips on how to do this.
+### ♿Accessibility features
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+Accessibility was a major focus throughout the project.
 
-## Sharing your solution
+Implemented features include:
 
-There are multiple places you can share your solution:
+- Semantic HTML structure.
+- Accessible dialog elements using `<dialog>`.
+- Proper heading hierarchy.
+- Keyboard navigation support.
+- Focus-visible styles for interactive controls.
+- Accessible icon buttons with descriptive labels.
+- Decorative SVGs hidden from assistive technologies.
+- Lightbox dialog with focus management.
+- Cart dialog with keyboard support and Escape key handling.
+- Mobile navigation dialog with focus trapping.
+- Screen-reader-only content where appropriate.
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Share on [X (formerly Twitter)](https://x.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in your post. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+---
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+### 💡What I learned
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+This project helped me gain a deeper understanding of:
 
-## Got feedback for us?
+- Building reusable UI components with Vanilla JavaScript.
+- Managing application state without a framework.
+- Structuring larger projects using a feature-based architecture.
+- Using the native `<dialog>` element effectively.
+- Implementing accessible image galleries and dialogs.
+- Applying CUBE CSS principles to real-world interfaces.
+- Creating responsive layouts using CSS Grid and Flexbox.
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+One implementation I'm particularly happy with is the modular gallery controller:
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+```js
+export function showNextImage() { 
+  currentIndex = (currentIndex + 1) % PRODUCT_IMAGES.length; 
+  render(); 
+}
+```
 
-**Have fun building!** 🚀
+This keeps navigation logic simple while supporting both the main gallery and lightbox gallery.
+
+---
+
+### 🚀Continued development
+
+Future areas of focus include:
+
+- More advanced state management patterns.
+- Automated accessibility testing.
+- Improved component composition patterns.
+- Advanced animation techniques.
+- Enhanced testing workflows using Vitest.
+- Exploring Web Components for reusable UI patterns.
+
+---
+
+### 📚Useful resources
+
+- [https://frontendmentor.io](https://frontendmentor.io) - Great platform for practicing realistic frontend projects.
+- [https://cube.fyi](https://cube.fyi) - Excellent resource for learning and applying CUBE CSS.
+- [https://developer.mozilla.org](https://developer.mozilla.org) - My primary reference for HTML, CSS, JavaScript, and accessibility.
+- [https://www.w3.org/WAI/](https://www.w3.org/WAI/) - Helpful accessibility guidance and best practices.
+
+---
+
+### 🤖AI Collaboration
+
+AI tools were used throughout development as a learning and productivity aid.
+
+#### Tools Used
+
+- ChatGPT
+
+#### How AI Was Used
+
+- Debugging JavaScript issues.
+- Reviewing accessibility decisions.
+- Discussing component architecture.
+- Refining CSS layouts.
+- Exploring dialog and focus-management patterns.
+- Reviewing semantic HTML structure.
+
+#### What Worked Well
+
+- Architecture discussions.
+- Accessibility reviews.
+- Code review feedback.
+- Exploring alternative implementations.
+
+#### What Didn't Work Well
+
+- AI-generated code still required manual review and testing.
+- Accessibility recommendations needed verification against real user interactions and browser behavior.
+
+AI was used as a collaborative learning tool rather than a replacement for implementation, testing, or decision-making.
+
+---
+
+## 👤Author
+
+- Frontend Mentor - [@berefire](https://www.frontendmentor.io/profile/berefire)
+- GitHub - [@berefire](https://github.com/berefire)
+
+---
+
+## 🙏Acknowledgments
+
+Thanks to Frontend Mentor for providing practical challenges that help developers improve real-world frontend skills.
+
+---
