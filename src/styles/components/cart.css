@@ -8,6 +8,10 @@
         inset: auto;
     }
 
+    .cart-dialog::backdrop {
+        background: transparent;
+    }
+
     .cart-dialog[open]{
         display: block;
         position: absolute;
