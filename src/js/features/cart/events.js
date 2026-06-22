@@ -52,7 +52,7 @@ export function bindCartEvents({
         "Cart Dialog Escape",
     );
 
-    // Click fuera del dialog
+    // Click outside from dialog
 
     addSafeEventListener(
         cartDialog,

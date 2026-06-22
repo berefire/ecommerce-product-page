@@ -1,9 +1,9 @@
 @layer states {
-    .add-to-cart-button:hover {
+    .add-to-cart-button:hover, .cart-checkout-button:hover {
         background-color:  var(--bg-add-to-cart-button-hover);
     }
 
-    .add-to-cart-button:focus-visible {
+    .add-to-cart-button:focus-visible, .cart-checkout-button:focus-visible {
         outline: 0.187em solid currentColor;
         outline-offset: 0.25em;
     }   

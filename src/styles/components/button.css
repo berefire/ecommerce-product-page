@@ -5,7 +5,7 @@
         gap: var(--gap-buttons-group);
     }
 
-    .add-to-cart-button {
+    .add-to-cart-button, .cart-checkout-button {
         display: flex;
         flex: 1;
         align-items: center;
@@ -23,8 +23,13 @@
         display: inline-block;
     }
 
-    .cart-icon, .description-button {
+    .cart-icon, .description-button, .cart-checkout-button {
         color: var(--bg-cart-icon);
+    }
+
+    .cart-checkout-button {
+        inline-size: 100%;
+        color: var(--fc-cart-checkout-button)
     }
 
     @media (min-width: 48em) {

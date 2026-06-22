@@ -64,7 +64,7 @@
     <div class="cluster cluster--sm">
       <button type="button" class="cart-button" aria-label="View shopping cart" aria-expanded="false"
         aria-controls="cart-dialog">
-        <span class="cart-badge" hidden></span>
+        <span class="cart-badge" aria-live="polite" hidden></span>
         <svg class="icon-cart" aria-hidden="true" focusable="false" width="22" height="20"
           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20">
           <path
@@ -245,7 +245,7 @@
 
   <dialog class="cart-dialog" aria-labelledby="cart-title">
     <div class="cart-header">
-      <h2 id="cart-title" class="cart-title text-preset-3--bold">
+      <h2 id="cart-title" class="cart-name text-preset-3--bold">
         Cart
       </h2>
       <button type="button" class="cart-close-button" aria-label="Close shopping cart">
@@ -263,13 +263,13 @@
         <ul class="cart-list-items">
           <li class="cart-content">
             <img class="cart-product-image" src="./src/assets/images/image-product-1-thumbnail.jpg" width="50"
-              height="50" alt="Thumbnail of the product added to cart.">
+              height="50" alt="">
 
             <div class="cart-item-details">
-              <p class="cart-product-title"></p>
-              <p class="cart-description">
-                <span class="cart-product-price"></span> x <span class="cart-product-quantity"></span> <span
-                  class="cart-product-total"></span>
+              <p class="cart-product-title text-preset-3--regular"></p>
+              <p class="cart-description text-preset-3--regular">
+                <span class="cart-product-price text-preset-3--regular"></span><span class="cart-operation-math"> x </span><span class="cart-product-quantity text-preset-3--regular"></span> <span
+                  class="cart-product-total text-preset-3--bold"></span>
               </p>
             </div>
 
@@ -285,7 +285,7 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="cart-checkout-button" aria-label="Proceed to checkout">Checkout</button>
+      <button type="button" class="cart-checkout-button text-preset-3--bold">Checkout</button>
     </div>
   </dialog>
 

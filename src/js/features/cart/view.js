@@ -8,14 +8,15 @@ export function createCartView({
     quantityElement,
     totalElement,
     checkoutButton,
+    cartButton,
 }) {
     function render(item){
         if(!item){
             badgeElement.hidden = true;
-
             emptyMessageElement.hidden = false;
             cartFilledContentElement.hidden = true;
             checkoutButton.hidden = true;
+            cartButton.removeAttribute("data-has-items");
 
             return;
         }
@@ -23,6 +24,7 @@ export function createCartView({
         const total = item.price * item.quantity;
 
         badgeElement.hidden = false;
+        cartButton.setAttribute("data-has-items", "true");
         badgeElement.textContent = item.quantity;
         emptyMessageElement.hidden = true;
         cartFilledContentElement.hidden = false;

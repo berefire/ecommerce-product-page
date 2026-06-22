@@ -20,8 +20,8 @@
     outline-offset: 0.25em;
   }
 
-  .cart-button[aria-expanded="true"] {
-    color: var(--bg-cart-icon-pressed);
+  .cart-button[data-has-items="true"] {
+    color: var(--bg-cart-icon-active);
   }
 
   @media (min-width: 64em) {

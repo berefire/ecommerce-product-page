@@ -16,6 +16,7 @@ export function initializeCart() {
             quantityElement: DOM.cartProductQuantity,
             totalElement: DOM.cartProductTotal,
             checkoutButton: DOM.cartCheckoutButton,
+            cartButton: DOM.cartButton,
         });
 
     const cartController =
