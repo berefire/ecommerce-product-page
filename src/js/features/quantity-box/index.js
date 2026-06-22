@@ -1,4 +1,4 @@
-import { DOM } from "@js/shared/dom.js";
+import { DOM } from "@js/shared";
 
 import { createQuantityBoxController } from "./controller.js";
 import { bindQuantityEvents } from "./events.js";

@@ -1,5 +1,4 @@
-import { addSafeEventListener } from "@js/shared/dom.js";
-import { onDesktopChange } from "@js/shared/media.js";
+import { addSafeEventListener, onDesktopChange } from "@js/shared";
 
 export function bindLightboxEvents({
     triggerButton,

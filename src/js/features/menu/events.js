@@ -1,5 +1,4 @@
-import { onDesktopChange } from "../../shared/media.js";
-import { addSafeEventListener } from "../../shared/dom.js";
+import { onDesktopChange, addSafeEventListener } from "@js/shared";
 
 export function bindMenuEvents({
     menuController,

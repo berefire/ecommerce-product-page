@@ -1,4 +1,4 @@
-import { MAX_QUANTITY } from "@js/shared/constants.js";
+import { MAX_QUANTITY } from "@js/shared";
 
 export function createQuantityBoxController({
     inputElement,

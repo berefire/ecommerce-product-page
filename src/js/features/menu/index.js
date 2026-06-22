@@ -1,4 +1,4 @@
-import { DOM, getFirstElement } from "../../shared/dom.js";
+import { DOM, getFirstElement } from "@js/shared";
 
 import { createMenuController } from "./controller.js";
 import { bindMenuEvents } from "./events.js";

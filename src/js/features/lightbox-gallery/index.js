@@ -1,4 +1,4 @@
-import { DOM } from "@js/shared/dom.js";
+import { DOM } from "@js/shared";
 
 import { createGalleryController } from "@js/features/gallery/controller.js";
 import { bindGalleryEvents } from "@js/features/gallery/events.js";

@@ -1,4 +1,4 @@
-import { PRODUCT_IMAGES } from "@js/shared/images.js";
+import { PRODUCT_IMAGES } from "@js/shared";
 
 export function createGalleryController({
   imageElement,

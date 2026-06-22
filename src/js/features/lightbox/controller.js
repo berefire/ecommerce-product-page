@@ -1,5 +1,4 @@
-import { isDesktop } from "@js/shared/media";
-import { lockScroll, unlockScroll } from "@js/shared/scroll.js";
+import { isDesktop, lockScroll, unlockScroll } from "@js/shared";
 
 export function createLightboxController({
     lightbox,
