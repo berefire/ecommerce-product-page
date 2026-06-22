@@ -24,7 +24,7 @@ export function createCartController({ cartView, cartDialog, cartButton }) {
     cartView.render(item);
 
     if (!cartDialog.open) {
-      cartDialog.showModal();
+      cartDialog.show();
       cartButton.setAttribute("aria-expanded", "true");
     }
   }
