@@ -1,7 +1,7 @@
-import { DOM } from "../../shared/dom.js";
+import { DOM } from "@js/shared/dom.js";
 
-import { createGalleryController } from "../gallery/controller.js";
-import { bindGalleryEvents } from "../gallery/events.js";
+import { createGalleryController } from "@js/features/gallery/controller.js";
+import { bindGalleryEvents } from "@js/features/gallery/events.js";
 
 export function initializeLightboxGallery() {
     const lightboxGalleryController =

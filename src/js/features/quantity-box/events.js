@@ -1,4 +1,4 @@
-import { addSafeEventListener } from "../../shared/dom.js";
+import { addSafeEventListener } from "@js/shared/dom.js";
 
 export function bindQuantityEvents({
     increaseButton,

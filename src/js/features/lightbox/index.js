@@ -1,4 +1,4 @@
-import { DOM } from "../../shared/dom.js";
+import { DOM } from "@js/shared/dom.js";
 
 import { createLightboxController } from "./controller.js";
 import { bindLightboxEvents } from "./events.js";

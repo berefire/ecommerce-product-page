@@ -1,4 +1,4 @@
-import { DOM } from "../../shared/dom.js";
+import { DOM } from "@js/shared/dom.js";
 
 import { createAddToCartController } from "./controller.js";
 import { bindAddToCartEvents } from "./events.js";

@@ -1,6 +1,6 @@
-import { isDesktop } from "../../shared/media.js";
-import { prefersReducedMotion } from "../../shared/accessibility.js";
-import { lockScroll, unlockScroll } from "../../shared/scroll.js";
+import { isDesktop } from "@js/shared/media.js";
+import { prefersReducedMotion } from "@js/shared/accessibility.js";
+import { lockScroll, unlockScroll } from "@js/shared/scroll.js";
 
 export function createMenuController({
   menu,

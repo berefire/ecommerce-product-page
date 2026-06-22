@@ -1,5 +1,5 @@
-import { DOM } from "../../shared/dom.js";
-import { isDesktop, onDesktopChange } from "../../shared/media.js";
+import { DOM } from "@js/shared/dom.js";
+import { isDesktop, onDesktopChange } from "@js/shared/media.js";
 
 import { createGalleryController } from "./controller.js";
 import { bindGalleryEvents } from "./events.js";
