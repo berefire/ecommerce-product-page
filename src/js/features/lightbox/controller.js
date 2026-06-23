@@ -16,6 +16,7 @@ export function createLightboxController({
         lightboxGalleryController.showImage(currentIndex);
 
         lightbox.showModal();
+        triggerButton.setAttribute("aria-expanded", "true");
         lockScroll();
     }
 
@@ -26,6 +27,7 @@ export function createLightboxController({
 
         lightbox.close();
         unlockScroll();
+        triggerButton.setAttribute("aria-expanded", "false");
         triggerButton.focus();
     }
 
