@@ -30,6 +30,7 @@ export const REQUIRED_ELEMENTS = [
     "lightboxPreviousButton",
     "lightboxNextButton",
     "lightboxThumbnailButtons",
+    "lightboxAnnouncer",
 
     // Quantity Box
     "quantityInput",

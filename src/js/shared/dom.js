@@ -28,6 +28,7 @@ const SELECTORS = {
     lightboxPreviousButton: '.lightbox-gallery-button--previous',
     lightboxNextButton: '.lightbox-gallery-button--next',
     lightboxThumbnailButtons: '.lightbox-thumbnail-button',
+    lightboxAnnouncer: '.lightbox-announcer',
 
     // Quantity Box
     quantityInput: '#quantity',
@@ -123,6 +124,7 @@ function initDOMElements(){
         lightboxPreviousButton: document.querySelector(SELECTORS.lightboxPreviousButton),
         lightboxNextButton: document.querySelector(SELECTORS.lightboxNextButton),
         lightboxThumbnailButtons: document.querySelectorAll(SELECTORS.lightboxThumbnailButtons),
+        lightboxAnnouncer: document.querySelector(SELECTORS.lightboxAnnouncer),
 
         // Quantity Box
         quantityInput: document.querySelector(SELECTORS.quantityInput),
