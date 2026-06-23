@@ -86,7 +86,7 @@ Users should be able to:
 
 ### 🔗Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/e-commerce-product-page-with-accessible-ui-and-lightbox-na_ULNsXzc](https://www.frontendmentor.io/solutions/e-commerce-product-page-with-accessible-ui-and-lightbox-na_ULNsXzc)
 - Live Site URL: [https://berefire.github.io/ecommerce-product-page/#](https://berefire.github.io/ecommerce-product-page/#)
 
 ## ⚙️My process
